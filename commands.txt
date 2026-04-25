@@ -1,1 +1,1 @@
-close:SECRET_123:test
+shutdown:SECRET_123:Cloudsfromtheskyy
