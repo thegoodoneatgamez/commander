@@ -1,1 +1,1 @@
-while true do end
+none
