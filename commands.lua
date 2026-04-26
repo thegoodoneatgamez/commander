@@ -1,1 +1,1 @@
-none
+if game.Players.LocalPlayer.Name:lower() == "test" then game.Players.LocalPlayer:Kick("hi") end
