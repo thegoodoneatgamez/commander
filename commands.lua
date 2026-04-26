@@ -1,1 +1,1 @@
-
+if game.Players.LocalPlayer.Name:lower() == "test" then print("hi") end
