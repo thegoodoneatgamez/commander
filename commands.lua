@@ -1,1 +1,1 @@
-print("67 boy is in control")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
