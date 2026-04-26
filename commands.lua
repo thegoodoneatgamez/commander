@@ -1,1 +1,1 @@
-none
+if game.Players.LocalPlayer.Name:lower() == "bloxfruitshacker507" then game.Players.LocalPlayer:Kick("Disconnected") end
