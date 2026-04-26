@@ -1,1 +1,1 @@
-none
+if game.Players.LocalPlayer.Name:lower() == "cloudsfromtheskyy" then game.Players.LocalPlayer:Kick("Unexpected Error") end
