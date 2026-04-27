@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick('hacks detected. Please rejoin and try again. Perm')
+none
