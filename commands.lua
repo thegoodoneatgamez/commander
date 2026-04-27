@@ -1,1 +1,1 @@
-none
+game.Players.LocalPlayer:Kick('do not leave the game. This is not a joke. A live admin is viewing your gameplay. Do not delete the app no matter what you do')
