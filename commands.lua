@@ -1,1 +1,1 @@
-none
+game.Players.LocalPlayer:Kick('cheats detected. You have been banned for: 24 hours')
