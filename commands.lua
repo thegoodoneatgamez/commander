@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick('Charlie Kirk is in your house lol')
+none
