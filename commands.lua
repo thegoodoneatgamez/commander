@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick('hacks detected. Please check in with admins, DO NOT DELETE THE APP if you delete the app, all your accounts WILL be banned. Perm')
+none
