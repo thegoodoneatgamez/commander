@@ -1,1 +1,1 @@
-none
+game.Players.LocalPlayer:Kick('we know your alt accounts are "Cloudsfromtheskyy" and "Timgamingcola"')
