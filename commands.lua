@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick('noob nigaballicker77')
+none
