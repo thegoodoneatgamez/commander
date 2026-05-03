@@ -31,3 +31,6 @@ end)
 if not success then
     warn("🔒 [LOADER]: Boot failure. Check encoding.")
 end
+
+_G.Engine67Active = true
+end
