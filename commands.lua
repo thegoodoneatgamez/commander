@@ -1,1 +1,1 @@
-print("niga")
+hi
